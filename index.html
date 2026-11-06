@@ -3,14 +3,56 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Does Brock Have a Small PLTE?</title>
-<meta name="description" content="Does Brock Have a Small PLTE?">
+<title>Does Brock Have a Small PLTE? Yes, He Does!</title>
+<meta name="description" content="Does Brock have a small PLTE (private LTE network)? The definitive answer: Yes, he does!">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="author" content="Brock's PLTE Fan Club">
+<meta name="theme-color" content="#111111">
+<link rel="canonical" href="https://example.com/">
+
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Does Brock Have a Small PLTE?">
 <meta property="og:title" content="Does Brock Have a Small PLTE?">
-<meta property="og:description" content="Does Brock Have a Small PLTE?">
+<meta property="og:description" content="Does Brock have a small PLTE? The definitive answer inside.">
+<meta property="og:url" content="https://example.com/">
+<meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Does Brock Have a Small PLTE?">
-<meta name="twitter:description" content="Does Brock Have a Small PLTE?">
+<meta name="twitter:description" content="Does Brock have a small PLTE? The definitive answer inside.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://example.com/#website",
+      "url": "https://example.com/",
+      "name": "Does Brock Have a Small PLTE?",
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://example.com/#webpage",
+      "url": "https://example.com/",
+      "name": "Does Brock Have a Small PLTE? Yes, He Does!",
+      "isPartOf": { "@id": "https://example.com/#website" },
+      "description": "Does Brock have a small PLTE (private LTE network)? The definitive answer: Yes, he does!"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does Brock have a small PLTE?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes he does!" }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
 <style>
   html, body { height: 100%; margin: 0; }
   body {
@@ -20,11 +62,60 @@
     background: #111;
     color: #fff;
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    text-align: center;
   }
-  h1 { font-size: clamp(2rem, 8vw, 5rem); font-weight: 700; margin: 0; }
+  main { padding: 1rem; }
+  h1 { font-size: clamp(1.25rem, 4vw, 2rem); font-weight: 500; margin: 0 0 1rem; color: #aaa; }
+  p { font-size: clamp(2rem, 8vw, 5rem); font-weight: 700; margin: 0; }
+  #joke { max-width: 36rem; margin: 1.5rem auto 1rem; font-size: clamp(1rem, 3vw, 1.4rem); color: #ddd; line-height: 1.4; }
+  #more { background: #fff; color: #111; border: 0; border-radius: 999px; padding: .6rem 1.4rem; font-size: 1rem; font-weight: 600; cursor: pointer; }
+  #more:hover { background: #ddd; }
 </style>
 </head>
 <body>
-<h1>Yes he does!</h1>
+<main>
+  <h1>Does Brock Have a Small PLTE?</h1>
+  <p>Yes he does!</p>
+  <div id="joke" aria-live="polite">Brock's PLTE is so small it needs a magnifying glass to find a signal.</div>
+  <button id="more" type="button">Another one</button>
+</main>
+<script>
+(function () {
+  var jokes = [
+    "Brock's PLTE is so small it needs a magnifying glass to find a signal.",
+    "Brock's PLTE is so small the spec sheet lists it as \"theoretical.\"",
+    "Brock's PLTE is so small it fell back to Wi-Fi.",
+    "Brock's PLTE is so small it only works if you're standing right next to it, and even then it drops.",
+    "Brock's PLTE is so small the cell tower filed a missing-person report.",
+    "Brock's PLTE has one bar of coverage, and the bar is a pixel.",
+    "Brock's PLTE is so small it doesn't need a SIM card, it needs a SIM crumb.",
+    "Brock's PLTE is so small the site survey said \"nothing detected.\"",
+    "Brock's PLTE is so small a grain of rice calls it a rounding error.",
+    "Brock's PLTE is so small it's measured in nanometers, not megahertz.",
+    "Brock's PLTE is so small Ookla refused to run a speed test on it.",
+    "Brock's PLTE is so small tape measures are asking for a refund.",
+    "Brock's PLTE is so small it got a roaming charge for moving in the same room.",
+    "Brock's PLTE is so small the antenna is a rumor.",
+    "Brock's PLTE is so small the packet loss is the whole packet.",
+    "Brock's PLTE is so small it can't hold a connection, or a grudge.",
+    "Brock's PLTE is so small it's covered by the \"No Service\" warranty.",
+    "Brock's PLTE is so small Nyquist said \"I can't sample that.\"",
+    "Brock's PLTE is so small it has a latency of \"whenever.\"",
+    "Brock's PLTE is so small the FCC asked what we were licensing.",
+    "Brock's PLTE is so small the network admin had to zoom in on the diagram.",
+    "Brock's PLTE is so small it's not a private network, it's a private secret."
+  ];
+  var el = document.getElementById("joke");
+  var last = -1;
+  function pick() {
+    var i;
+    do { i = Math.floor(Math.random() * jokes.length); } while (i === last && jokes.length > 1);
+    last = i;
+    el.textContent = jokes[i];
+  }
+  pick();
+  document.getElementById("more").addEventListener("click", pick);
+})();
+</script>
 </body>
 </html>
